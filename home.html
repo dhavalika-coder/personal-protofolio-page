@@ -1,0 +1,257 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #nav-container {
+        height: 80px;
+        background-color: rgb(0, 0, 0);
+      }
+
+      #nav-container > ol {
+        height: 80px;
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        align-items: center;
+        list-style: none;
+      }
+
+      ol > li {
+        background-color: rgb(34, 32, 10);
+        padding: 7px 20px;
+        border-radius: 10px;
+      }
+      ol > li:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        box-shadow: 5px 5px 5px black;
+      }
+      video {
+        width: 100%;
+      }
+
+      #section-container-2 {
+        position: absolute;
+        top: 200px;
+        border-radius: 20px;
+        width: 50%;
+        padding: 10px 30px;
+        margin-left: 30%;
+        backdrop-filter: blur(10px);
+      }
+      #section-container-2 > div {
+        width: 80%;
+      }
+      #section-container-2:hover {
+        transform: skew(20deg);
+      }
+      #section-container-2 > div > h1,
+      #section-container-2 > div > p {
+        color: antiquewhite;
+        text-align: center;
+      }
+      #section-container-3 {
+        position: relative;
+        top: -100px;
+        background-color: black;
+      }
+      #section-container-3 > aside {
+        display: flex;
+      }
+      #section-container-3 > aside > div {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+        background-color: rgb(36, 36, 36);
+        padding: 10px;
+      }
+      #section-container-3 > aside > div > img {
+        height: 250px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 10px 20px;
+      }
+      svg {
+        position: relative;
+        top: 5px;
+      }
+      button:hover svg {
+        transform: rotate(90deg);
+      }
+
+      img:hover {
+        transform: skewX(10deg);
+        box-shadow: 5px 5px 10px white;
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: black;
+        position: relative;
+        top: -99px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      footer > ul {
+        list-style: none;
+        color: aliceblue;
+        line-height: 1.5;
+      }
+      ul > li:first-child {
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 21px;
+      }
+      ul > li:first-child:hover {
+        text-decoration: underline solid rgb(169, 171, 172);
+        cursor: pointer;
+        color: rgb(169, 171, 172);
+        transform: translateX(10px);
+      }
+      ul > li:hover {
+        transform: translateX(10px);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="nav-container">
+      <ol>
+        <li>Home</li>
+        <li>Login</li>
+        <li>Contact</li>
+        <li>Help</li>
+        <li>About</li>
+      </ol>
+    </nav>
+    <main>
+      <section>
+        <video src="./background-video.mp4" controls autoplay></video>
+      </section>
+
+      <section id="section-container-2">
+        <div>
+          <h1>Heading one</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            perspiciatis sapiente in! Officia soluta sit vero velit nulla
+          </p>
+        </div>
+      </section>
+
+      <section id="section-container-3">
+        <aside>
+          <div>
+            <img
+              src="https://i.pinimg.com/736x/79/fd/d1/79fdd17253b569a417e980a99aecd978.jpg"
+              alt=""
+            />
+            <button>
+              Read more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-right-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div>
+            <img
+              src="https://i.pinimg.com/736x/79/fd/d1/79fdd17253b569a417e980a99aecd978.jpg"
+              alt=""
+            />
+            <button>
+              Read more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-right-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div>
+            <img
+              src="https://i.pinimg.com/736x/79/fd/d1/79fdd17253b569a417e980a99aecd978.jpg"
+              alt=""
+            />
+            <button>
+              Read more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-right-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                />
+              </svg>
+            </button>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>List items-1</li>
+        <li>List items-2</li>
+        <li>List items-3</li>
+        <li>List items-4</li>
+        <li>List items-5</li>
+      </ul>
+      <ul>
+        <li>List items-1</li>
+        <li>List items-2</li>
+        <li>List items-3</li>
+        <li>List items-4</li>
+        <li>List items-5</li>
+      </ul>
+      <ul>
+        <li>List items-1</li>
+        <li>List items-2</li>
+        <li>List items-3</li>
+        <li>List items-4</li>
+        <li>List items-5</li>
+      </ul>
+      <ul>
+        <li>List items-1</li>
+        <li>List items-2</li>
+        <li>List items-3</li>
+        <li>List items-4</li>
+        <li>List items-5</li>
+      </ul>
+    </footer>
+  </body>
+</html>
